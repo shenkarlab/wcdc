@@ -10,13 +10,15 @@
 		<script>
 			  document.getElementById('object1').onclick = function() 
 			  {
-			  document.getElementById('object1').style.display = 'none';
+			  	document.getElementById('object1').style.display = 'none';
 			  };
 		</script>
 	</head>
 	<body onLoad="mark(); animate($('#object1'), 15000)" class="layout2" >
 		<div id="wrapper">
 			<div id="object1" ></div>
+			<div class="popup"></div>
+        	<div class="close"></div>
 			<nav>
 				<section>
 					<a href="demo.html">layout1</a>

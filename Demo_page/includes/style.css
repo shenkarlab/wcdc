@@ -157,3 +157,7 @@ footer
 
 #object1 { position: absolute; left: -200px; top: 200px;}
 #object1 { background-color: #ff0000; z-index:10; height: 20px; width: 100px; }
+
+.popup, .close { position: absolute; height: 200px; width: 200px; }
+.popup { background: #f00; top: 300px; left: 480px; z-index: 1; }
+.close { background: #ff0; top: 250px; left: 530px; z-index: 0; }
