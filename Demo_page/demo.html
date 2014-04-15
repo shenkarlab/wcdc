@@ -7,7 +7,7 @@
 		<script src="includes/mark.js"></script>
 		<script src="includes/pixi.js"></script>
 	</head>
-	<body onLoad="mark(); animate($('#object1'), 15000)" class="layout2" >
+	<body onLoad="mark()" class="layout2" >
 		<div id="wrapper">
 			<div id="object1" ></div>
 			<div class="popup"></div>
@@ -79,11 +79,12 @@
 	
 	    requestAnimFrame( animate );
 	
-	    // just for fun, lets rotate mr rabbit a little
 	    bunny.position.x += 0.5;
+	    bunny.rotation += 0.1;
 		
 	    // render the stage   
 	    renderer.render(stage);
+	    
 	}
 
 	</script>
