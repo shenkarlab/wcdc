@@ -75,13 +75,22 @@
 	
 	stage.addChild(bunny);
 	
+	var element = document.getElementsByClassName('popup')
+	var obj = element[0].getBoundingClientRect() //get html object location for collision 
+	console.log(obj.left); //position of objects top
+	
 	function animate() {
 	
 	    requestAnimFrame( animate );
 	
 	    bunny.position.x += 0.5;
 	    bunny.rotation += 0.1;
-	    console.log(bunny.position.x +" "+ bunny.position.y);
+	    console.log(bunny.position.x +" "+ bunny.position.y); //position of bunny
+		
+		if (bunny.position.x == obj.left)
+		{
+			element[0].style.display = 'none'; //collision detection 
+		}
 		
 	    // render the stage   
 	    renderer.render(stage);
