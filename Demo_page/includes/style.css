@@ -159,5 +159,28 @@ footer
 #object1 { background-color: #ff0000; z-index:10; height: 20px; width: 100px; }
 
 .popup, .close { position: absolute; height: 200px; width: 200px; }
-.popup { background: #f00; top: 300px; left: 480px; z-index: 1; }
-.close { background: #ff0; top: 250px; left: 530px; z-index: 0; }
+.popup { background: #f00; top: 500px; left: 480px; z-index: 1; }
+.close { background: #ff0; top: 450px; left: 530px; z-index: 0; }
+
+.overlay 	// dynamic Highlight-word finding
+{
+    position: absolute;
+    border: 1px solid red;
+    background: #dff;
+    margin: -1px;
+    z-index: -1;
+}
+p 
+{
+    width: 250px;
+    margin: 24px 65px;
+}
+p.span 
+{
+    font-weight: bold;
+}
+
+.trans 
+{ 
+	opacity: 0; filter: alpha(opacity: 0);
+}

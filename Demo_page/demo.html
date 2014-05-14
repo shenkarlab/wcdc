@@ -4,10 +4,11 @@
 		<meta charset = "utf-8">
 		<title>CSS2</title>
 		<link rel = "stylesheet" href = "includes/style.css">
-		<script src="includes/mark.js"></script>
 		<script src="includes/pixi.js"></script>
+		<script src="includes/jquery.js"></script>
+		<script src="includes/js.js"></script>
 	</head>
-	<body onLoad="mark()" class="layout2" >
+	<body class="layout2" >
 		<div id="wrapper">
 			<div id="object1" ></div>
 			<div class="popup"></div>
@@ -25,9 +26,13 @@
 					<p></p>
 					<h1>title 1</h1> 
 				</article>
+					<p id="test">Let's get a dog to keep the cats company. 
+					A cat can get lonely and we don't want to let it get lonely or else it will get out of the bag and get into trouble. 
+					Dog's don't need bags, but we can let it have a brain if it want's one and the cat doesn't get jealous. 
+					But the cat needs company
+					</p>
 				<article>
-					<h2>title 2</h2> 
-					<p></p>
+					<h2>title 2</h2>
 				</article>
 			</section>
 			<aside> 
@@ -51,7 +56,7 @@
 	
 	// create a renderer instance
 	
-	var renderer = PIXI.autoDetectRenderer(1000, 1000, null, true);
+	var renderer = PIXI.autoDetectRenderer(1400, 1000, null, true);
 	
 	// add the renderer view element to the DOM
 	document.body.appendChild(renderer.view);
@@ -61,7 +66,7 @@
 	requestAnimFrame( animate );
 	
 	// create a texture from an image path
-	var texture = PIXI.Texture.fromImage("images/bunny.png");
+	var texture = PIXI.Texture.fromImage("images/1.gif");
 	// create a new Sprite using the texture
 	var bunny = new PIXI.Sprite(texture);
 	
@@ -70,22 +75,22 @@
 	bunny.anchor.y = 0.5;
 	
 	// move the sprite t the center of the screen
-	bunny.position.x = 10;
+	bunny.position.x = 1400;
 	bunny.position.y = 300;
 	
 	stage.addChild(bunny);
 	
 	var element = document.getElementsByClassName('popup')
 	var obj = element[0].getBoundingClientRect() //get html object location for collision 
-	console.log(obj.left); //position of objects top
+	//console.log(obj.left); //position of objects top
 	
 	function animate() {
 	
 	    requestAnimFrame( animate );
 	
-	    bunny.position.x += 0.5;
-	    bunny.rotation += 0.1;
-	    console.log(bunny.position.x +" "+ bunny.position.y); //position of bunny
+	    bunny.position.x -= 0.5;
+	    //bunny.rotation -= 0.1;
+	    //console.log(bunny.position.x +" "+ bunny.position.y); //position of bunny
 		
 		if (bunny.position.x == obj.left)
 		{
