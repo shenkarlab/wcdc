@@ -1,0 +1,26 @@
+{
+  "name": "zombiesVScats",
+  "description": "Toxoplasma gone wild",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["includes/pixi.js","includes/jquery.js", "includes/zombie-walk.js"],
+    "css": ["includes/style.css"]
+  }],
+  
+  "web_accessible_resources": [
+  	"images/zombie-sprite/*.png",
+    "images/*.png",
+    "style/double-rainbow.css",
+    "script/double-rainbow.js",
+    "script/main.js",
+    "templates/*"
+  ],
+
+  "manifest_version": 2
+}
