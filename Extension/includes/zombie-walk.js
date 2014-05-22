@@ -14,11 +14,11 @@ function start(location)
 		requestAnimFrame( animate );
 
 		// create a texture from an image path
-		var texture = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/1.png"));
-		var texture2 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/2.png"));
-		var texture3 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/3.png"));
-		var texture4 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/4.png"));
-		var texture5 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/5.png"));
+		var texture = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/1.png"), true);
+		var texture2 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/2.png"), true);
+		var texture3 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/3.png"), true);
+		var texture4 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/4.png"), true);
+		var texture5 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/5.png"), true);
 		var animationTextures = [texture, texture2, texture3, texture4, texture5];
 		var currentAnimation;
 
