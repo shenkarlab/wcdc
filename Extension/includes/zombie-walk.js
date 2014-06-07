@@ -103,7 +103,7 @@ function start(location, x_location)
 				detected = 1;
 				//collision();
 				var element = document.getElementsByTagName('span')
-				var obj = element[0].style.display='none';
+				var obj = element[0].style.visibility='hidden';
 				
 			}
 	
@@ -151,3 +151,4 @@ $(document).ready(function find()
 				if (obj.top > 0)
 					start(obj.top, obj.left);
 			});
+});
