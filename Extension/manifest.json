@@ -9,7 +9,7 @@
 
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "js": ["includes/pixi.js","includes/jquery.js", "includes/zombie-walk.js"],
+    "js": ["includes/pixi.js","includes/jquery.js", "includes/zombie-walk.js", "includes/popup.js"],
     "css": ["includes/style.css"]
   }],
   
@@ -20,11 +20,7 @@
   
   "web_accessible_resources": [
   	"images/zombie-sprite/*.png",
-    "images/*.png",
-    "style/double-rainbow.css",
-    "script/double-rainbow.js",
-    "script/main.js",
-    "templates/*"
+    "images/*.png"
   ],
 
   "manifest_version": 2

@@ -22,6 +22,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    list-style-type: none;
 }
 body {
     line-height:1;
@@ -84,3 +85,4 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
