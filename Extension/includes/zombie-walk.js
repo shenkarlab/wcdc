@@ -150,5 +150,4 @@ $(document).ready(function find()
 				
 				if (obj.top > 0)
 					start(obj.top, obj.left);
-			});
 });
