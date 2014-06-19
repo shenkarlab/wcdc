@@ -29,6 +29,27 @@ function collision()
 
 function start(location, x_location)
 	{
+		console.log("Zombie-walk started");
+		
+		toastr.options = 
+		{
+		  "closeButton": false,
+		  "debug": false,
+		  "positionClass": "toast-top-full-width",
+		  "onclick": null,
+		  "showDuration": "300",
+		  "hideDuration": "1000",
+		  "timeOut": "5000",
+		  "extendedTimeOut": "1000",
+		  "showEasing": "swing",
+		  "hideEasing": "linear",
+		  "showMethod": "fadeIn",
+		  "hideMethod": "fadeOut"
+		}
+		toastr.error("CDC advises that you leave this site immediately due to contamination. ", "WARNING")
+		
+		
+		
 		// create an new instance of a pixi stage
 		// the second parameter is interactivity...
 		var interactive = true;

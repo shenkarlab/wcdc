@@ -9,8 +9,9 @@
 
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "js": ["includes/pixi.js","includes/jquery.js", "includes/zombie-walk.js", "includes/popup.js"],
-    "css": ["includes/style.css"]
+    "js": ["includes/pixi.js","includes/jquery.js", "includes/zombie-walk.js",
+    	   "includes/toastr.js"],
+    "css": ["includes/style.css", "includes/toastr.css"]
   }],
   
   "browser_action": {
