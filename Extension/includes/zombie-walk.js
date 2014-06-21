@@ -31,7 +31,7 @@ function start(location, x_location)
 	{
 		console.log("Zombie-walk started");
 		
-		toastr.options = 
+		toastr.options = 							// The popup warning! (toastr plugin)
 		{
 		  "closeButton": false,
 		  "debug": false,
@@ -63,15 +63,27 @@ function start(location, x_location)
 		renderer.view.style.position = "absolute";
 		renderer.view.style.top = "0px";
 		renderer.view.style.left = "0px";
-		requestAnimFrame( animate );
 
 		// create a texture from an image path
-		var texture = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/1.png"), true);
-		var texture2 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/2.png"), true);
-		var texture3 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/3.png"), true);
-		var texture4 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/4.png"), true);
-		var texture5 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/zombie-sprite/5.png"), true);
-		var animationTextures = [texture, texture2, texture3, texture4, texture5];
+		var texture = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/1.png"), true);
+		var texture2 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/2.png"), true);
+		var texture3 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/3.png"), true);
+		var texture4 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/4.png"), true);
+		var texture5 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/5.png"), true);
+		var texture6 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/6.png"), true);
+		var texture7 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/7.png"), true);
+		var texture8 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/8.png"), true);
+		var texture9 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/9.png"), true);
+		var texture10 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/10.png"), true);
+		var texture11 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/11.png"), true);
+		var texture12 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/12.png"), true);
+		var texture13 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/13.png"), true);
+		var texture14 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/14.png"), true);
+		var texture15 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/15.png"), true);
+		var texture16 = PIXI.Texture.fromImage(chrome.extension.getURL("../images/sprite/16.png"), true);
+		var animationTextures = [texture, texture2, texture3, texture4, texture5, 
+								 texture6, texture7, texture8, texture9, texture10, 
+								 texture11, texture12, texture13, texture14, texture15, texture16];
 		var currentAnimation;
 
 		PIXI.TextureCache[0] = texture;
@@ -79,6 +91,17 @@ function start(location, x_location)
 		PIXI.TextureCache[2] = texture3;
 		PIXI.TextureCache[3] = texture4;
 		PIXI.TextureCache[4] = texture5;
+		PIXI.TextureCache[4] = texture6;
+		PIXI.TextureCache[4] = texture7;
+		PIXI.TextureCache[4] = texture8;
+		PIXI.TextureCache[4] = texture9;
+		PIXI.TextureCache[4] = texture10;
+		PIXI.TextureCache[4] = texture11;
+		PIXI.TextureCache[4] = texture12;
+		PIXI.TextureCache[4] = texture13;
+		PIXI.TextureCache[4] = texture14;
+		PIXI.TextureCache[4] = texture15;
+		PIXI.TextureCache[4] = texture16;
 
 
 		// create a new Sprite using the texture
@@ -96,44 +119,48 @@ function start(location, x_location)
 		bunny.anchor.x = 0.5;
 		bunny.anchor.y = 0.5;
 
-		// move the sprite t the center of the screen
-		bunny.position.x = 1400;
-		bunny.position.y = location;
+		// deploy sprite at location of the trigger
+		bunny.position.x = (x_location+20);
+		bunny.position.y = (location+10);
 
 		stage.addChild(bunny);
 
-		requestAnimFrame(animate);
+		//requestAnimFrame(animate);		// clashed with setTimeout
 
 		var framesPerSecond = 25;
 		var msPerFrame = 200;
-		var walkCycleFrameCount = 5;
+		var walkCycleFrameCount = 16;
 		var dirIndex = 1;
 		var detected = 0;
 
-		function animate() 
+		setTimeout( function animate()
 		{
 			var animationAgeInMs = new Date().getTime();
 	
-			bunny.position.x -= 0.2;
+			//bunny.position.x -= 0.2;   // dont move
 			//bunny.rotation -= 0.1;
 			//console.log(bunny.position.x +" "+ bunny.position.y); //position of bunny
+
+			//if (Math.round(bunny.position.x) == Math.round(x_location) && detected == 0) old colision
 			
-			if (Math.round(bunny.position.x) == Math.round(x_location) && detected == 0)
+			if(Math.floor(animationAgeInMs / msPerFrame) % walkCycleFrameCount == 15 && detected == 0)
 			{	// collision detection
 				console.log("yes");
 				detected = 1;
 				//collision();
 				var element = document.getElementsByTagName('span')
 				var obj = element[0].style.visibility='hidden';
-				
 			}
-	
-			bunny.gotoAndStop((Math.floor(animationAgeInMs / msPerFrame) % walkCycleFrameCount));
+			if(detected == 0)
+				bunny.gotoAndStop((Math.floor(animationAgeInMs / msPerFrame) % walkCycleFrameCount));
+			else
+				bunny.gotoAndStop((Math.floor(animationAgeInMs / msPerFrame) % 2)+14);
+		
 			// render the stage   
 			renderer.render(stage);
 			requestAnimFrame(animate);
 	
-		}
+		} , 4000 );
 	}
 
 
