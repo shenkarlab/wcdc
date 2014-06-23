@@ -14,6 +14,7 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
@@ -25,6 +26,7 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!--DRAGGABLE-End-->
 <script type="text/javascript" src="js/kkcountdown.min.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
 
 </head>
 
@@ -36,26 +38,22 @@
 <!-- Start:  -->
 
 <header>
-<a href="javascript:;"><img id="home1" class="logo" src=""></a>
-sdlfkjdslkfjdslkj
-
+		<a href="javascript:;"><img id="home1" class="logo" src="images/logo.png"></a>
 	<UL class="header_ul">
-		<li class="header_li"><a href="javascript:;"><img id="about1" src=""></a></li>
-		<li class="header_li"><a href="javascript:;"><img id="gallery1" src=""></a></li>
-		<li class="header_li"><a href="javascript:;"><img id="share1" src=""></a></li>
+		<li class="header_li"><a class="map_button" href="javascript:;">Map</a></li>
+		<li class="header_li"><a class="his_button" href="javascript:;">History</a></li>
+		<li class="header_li"><a class="download_button" href="javascript:;">Download</a></li>
+		<li class="header_li"><a class="contact_button" href="javascript:;">Contact</a></li>
 	</UL>
 </header>
-<a href="javascript:;"><img id="home1" class="logo" src="images/logo.png"></a>
 
 <div class="news">
 <h4><img src="images/news_icon.png">
 TWITTER NEWS - will be on top of the map</h4>
 </div>
 
-<div class="landing stretch">
-	MAP WILL GO HERE
-
-
+	<a href="#" id="map_button"></a>
+<div class="landing stretch" id="map">
 
 </div>
 
@@ -73,7 +71,7 @@ TWITTER NEWS - will be on top of the map</h4>
 
 </div>
 
-		<div class="gallery_page" id="p_hitchikers">
+<div class="gallery_page" id="p_hitchikers">
 
 		<h1>IN THE BEGINNING</h1>
 			<p>
@@ -101,177 +99,46 @@ Our extension shows the user the infected parts of the web, gives alerts and eye
 This extension will notify you how to avoid the infected web-sites and keep our internets safe from harms!
 
 Save the humans!
+</p>
 
-
-
-
-
-
-
-
-
-	<img src="images/1.png">
-	<img src="images/2.png">
-	<img src="images/3.png">
-	<img src="images/4.png">
-
-
-				<div class="button">
-					<a href="http://www.amazon.com/Hitchhikers-Guide-Galaxy-Douglas-Adams/dp/0345391802" target="_blank">Buy Now</a>
-				</div> 
-				<div class="button">
-					<a href="http://www.readanybook.com/ebook/the-hitch-hiker-s-guide-to-the-galaxy-264" target="_blank">Read online</a>
-				</div>
-			</p>
-		</div>
-
-		<div class="gallery_page hide" id="p_rest">
-			<h1>The Restaurant at the End of the Universe (1980)</h1>
-			<p>
-				The Restaurant at the End of the Universe is the second book in the Hitchhiker's Guide to the Galaxy comedy science fiction pentalogy by Douglas Adams. It was originally published by Pan Books as a paperback. The book was inspired by the song "Grand Hotel" by British rock band Procol Harum. It takes its name from Milliways, the Restaurant at the End of the Universe, one of the settings of the book.
-				<BR><BR>
-				The Restaurant at the End of the Universe begins just as The Hitchhiker's Guide to the Galaxy ended. Arthur Dent, Ford Prefect, Trillian, and Zaphod Beeblebrox have just left the planet Magrathea when they are attacked by a Vogon ship. They find they are unable to use the Improbability Drive to escape, as Arthur has accidentally jammed the computer with a simple request for a cup of tea which proved a rather difficult problem. Luckily, an ancestor of Zaphod's, Zaphod Beeblebrox the Fourth, saves them.
-				<div class="button">
-					<a href="http://www.amazon.com/The-Restaurant-at-End-Universe/dp/0345391810" target="_blank">Buy Now</a>
-				</div> 
-				<div class="button">
-					<a href="http://www.e-reading.co.uk/book.php?book=71159" target="_blank">Read online</a>
-				</div>
-			</p>
-		</div>
-
-		<div class="gallery_page hide" id="p_life">
-			<h1>Life, the Universe and Everything (1982)</h1>
-			<p>
-				Life, the Universe and Everything is the third book in the five-volume Hitchhiker's Guide to the Galaxy science fiction series by British writer Douglas Adams. The title refers to the Answer to Life, the Universe, and Everything.
-				<br><br>
-				The story was originally outlined by Adams as Doctor Who and the Krikkitmen to be a Tom Baker Doctor Who television six-part story, but was rejected by the BBC. It was later considered as a plotline for the second series of the Hitchhiker's TV series, which was never commissioned.
-				<br><br>	
-				A radio adaptation of Life, the Universe and Everything was recorded in 2003 under the guidance of Dirk Maggs, starring the surviving members of the cast of the original Hitchhiker's radio series. Adams himself, at his own suggestion, makes a cameo appearance; due to his death before production began on the series, this was achieved by sampling his character's dialogue from an audio book of the novel read by Adams that was published in the 1990s. The radio adaptation debuted on BBC Radio 4 in September 2004.
-
-				<div class="button">
-					<a href="http://www.amazon.com/Life-Universe-Everything-Hitchhikers-Trilogy/dp/0345391829" target="_blank">Buy Now</a>
-				</div> 
-				<div class="button">
-					<a href="http://www.readbestbooks.net/read/ebooks/Life_the_universe_and_everything.html" target="_blank">Read online</a>
-				</div>
-			</p>
-		</div>
-
-		<div class="gallery_page hide" id="p_meaning">
-			<h1>The Meaning of Liff (1983)</h1>
-			<p>
-				The book is a "dictionary of things that there aren't any words for yet". Rather than inventing new words, Adams and Lloyd picked a number of existing place-names and assigned interesting meanings to them; meanings that can be regarded as on the verge of social existence and are ready to become recognisable entities.
-				<br><br>	
-				All the words listed are toponyms and describe common feelings and objects for which there is no current English word. Examples are Shoeburyness ("The vague uncomfortable feeling you get when sitting on a seat that is still warm from somebody else's bottom") and Plymouth ("To relate an amusing story to someone without remembering that it was they who told it to you in the first place").
-				<br><br>	
-				The book cover usually bears the tagline "This book will change your life", either as part of its cover or as an adhesive label. Liff (a village near Dundee in Scotland) is then defined in the book as "A book, the contents of which are totally belied by its cover. For instance, any book the dust jacket of which bears the words, 'This book will change your life'."
-				<div class="button">
-					<a href="http://www.amazon.co.uk/Meaning-Liff-Douglas-Adams/dp/0330281216" target="_blank">Buy Now</a>
-				</div> 
-				<div class="button">
-					<a href="http://folk.uio.no/alied/TMoL.html" target="_blank">Read online</a>
-				</div>
-			</p>
-		</div>
-
-		<div class="gallery_page hide" id="p_solong">
-			<h1>So Long, and Thanks for All the Fish (1984)</h1>
-			<p>
-				So Long, and Thanks for All the Fish is the fourth book of the Hitchhiker's Guide to the Galaxy "series" written by Douglas Adams. Its title is the message left by the dolphins when they departed Planet Earth just before it was demolished to make way for a hyperspace bypass, as described in The Hitchhiker's Guide to the Galaxy. The phrase has since been adopted by some science fiction fans as a humorous way to say "goodbye" and a song of the same name was featured in the 2005 film adaptation of The Hitchhiker's Guide to the Galaxy.
-				<div class="button">
-					<a href="http://www.amazon.com/So-Long-Thanks-All-Fish/dp/0345391837" target="_blank">Buy Now</a>
-				</div> 
-				<div class="button">
-					<a href="http://aufbix.org/~bolek/download/guide4.pdf" target="_blank">Read online</a>
-				</div>
-			</p>
-		</div>
-
-		<div class="gallery_page hide" id="p_dirk">
-			<h1>Dirk Gently's Holistic Detective Agency (1987)</h1>
-			<p>
-				Dirk Gently's Holistic Detective Agency is a humorous detective novel by Douglas Adams, first published in 1987. It is described by the author on its cover as a "thumping good detective-ghost-horror-who dunnit-time travel-romantic-musical-comedy-epic".
-				<br><br>
-				The book was followed by a sequel, The Long Dark Tea-Time of the Soul. The only recurring major characters are the eponymous Gently, his secretary Janice Pearce and Sergeant Gilks. Adams also began work on another novel, The Salmon of Doubt with the intention of publishing it as the third book in the series, but died before completing it.
-				<br><br>
-				A BBC Radio adaptation starring Harry Enfield was broadcast on BBC Radio 4 in October 2007. A second series based on the sequel was broadcast on October 2008. A 2010 television adaptation by Howard Overman for BBC Four borrowed some of the characters and some minor plot elements of the novel to create a new story.
-				<div class="button">
-					<a href="http://www.amazon.com/Dirk-Gentlys-Holistic-Detective-Agency/dp/0671746723" target="_blank">Buy Now</a>
-				</div> 
-			</p>
-
-		</div>
-
-		<div class="gallery_page hide" id="p_tea">
-			<h1>The Long Dark Tea - Time of the Soul (1988)</h1>
-			<p>
-				The Long Dark Tea-Time of the Soul is a 1988 humorous fantasy detective novel by Douglas Adams. It is the second book by Adams featuring private detective Dirk Gently, the first being Dirk Gently's Holistic Detective Agency. The title is a phrase which appeared in Adams' novel Life, the Universe and Everything to describe the wretched boredom of immortal being Wowbagger, the Infinitely Prolonged, and is a play on the theological treatise Dark Night of the Soul, by Saint John of the Cross.
-				<div class="button">
-					<a href="http://www.amazon.com/Long-Dark-Tea-Time-Soul/dp/0671742515" target="_blank">Buy Now</a>
-				</div> 
-				<div class="button">
-					<a href="http://www.logix.cz/michal/Douglas_Adams/Douglas%20Adams%20-%20The%20Long%20Dark%20Tea-Time%20of%20the%20Soul.txt" target="_blank">Read online</a>
-				</div>
-			</p>
-		</div>
-
-		<div class="gallery_page hide" id="p_last">
-	
-			<h1>LAST CHANCE TO SEE (1990)</h1>
-			<p>
-				"Last Chance To See" was published in 1990 and is yet another unexpected book in Douglas Adams' bibliography. For many it is his very best work.
-				We follow Douglas who travels across the globe with zoologist Mark Cawardine in search for endangered animal species. This may seem fairly dull to many, but as always Douglas turns it into a great read, very funny and fascinating from the first to the last page.
-				This book will stay unknown to most of the public even though it received great critical success. Indeed, many readers were not interested for the only reason that it is not a fictional book, which is a great pity. Maybe with time and ever growing pressure on the world's environment, "Last Chance To See" will rightfully claim its readership.
-				<br><br>
-
-				In parallel to the book, Douglas Adams also recorded a radio series for the BBC on this same theme. A multimedia CD-Rom version of "Last Chance" was also released, featuring Douglas reading the book's text whilst a beautiful photographic slide show illustrates (the CD-Rom includes 800 photographies). 
-				<div class="button">
-					<a href="http://www.amazon.com/Last-Chance-See-Douglas-Adams/dp/0345371984" target="_blank">Buy Now</a>
-				</div> 
-			</p>
-		</div>
-
-
-		<div class="gallery_page hide" id="p_mostly">
-			<h1>mostly harmless (1992)</h1>
-			<p>
-				Mostly Harmless is a novel by Douglas Adams and the fifth book in the Hitchhiker's Guide to the Galaxy trilogy. It is described on the cover of the first editions as "The fifth book in the increasingly inaccurately named Hitchhikers Trilogy". It was the last Hitchhiker's book written by Adams.
-				<BR><BR>
-				The title derives from a joke early in the series, when Arthur Dent discovers that the entry for Earth in The Hitchhiker's Guide to the Galaxy consists, in its entirety, of the word "Harmless". His friend Ford Prefect, a contributor to the Guide, assures him that the next edition will contain the article on Earth that Ford has spent the last 15 years researching—somewhat cut due to space restrictions, but still an improvement. The revised article, he eventually admits, will simply read "Mostly harmless". It later turns out that Ford had written a long essay on how to have fun on Earth, but the editors in the guide's main office building edited everything out. Later in the series, Ford is surprised to discover that all of his contribution had been edited back into the Guide, prompting his reunion with Arthur on the alternative Earth in So Long, and Thanks for All the Fish.
-				<div class="button">
-					<a href="http://www.amazon.com/Mostly-Harmless-Douglas-Adams/dp/0345418778" target="_blank">Buy Now</a>
-				</div> 
-				<div class="button">
-					<a href="http://www.e-reading.co.uk/book.php?book=71161" target="_blank">Read online</a>
-				</div>
-			</p>
-		</div>
-
-		<div class="gallery_page hide" id="p_salmon">
-			<h1>The Salmon of Doubt (2002)</h1>
-			<p>
-				The Salmon of Doubt: Hitchhiking the Galaxy One Last Time is a posthumous collection of previously published and unpublished material by Douglas Adams. It consists largely of essays about technology and life experiences, but its major selling point is the inclusion of the incomplete novel on which Adams was working at the time of his death, The Salmon of Doubt (from which the collection gets its title, a reference to the Irish myth of the Salmon of Knowledge).
-				<br><br>
-				Adams admitted that while he originally planned on writing a third Dirk Gently book, the ideas which he had for it would have fit better into another Hitchhiker's book: "A lot of the stuff which was originally in The Salmon of Doubt really wasn't working", and he planned on "salvaging some of the ideas that I couldn't make work in a Dirk Gently framework and putting them in a Hitchhiker framework... and for old time's sake I may call it The Salmon of Doubt."
-				<div class="button">
-					<a href="http://www.amazon.com/The-Salmon-Doubt-Hitchhiking-Galaxy/dp/0345455290" target="_blank">Buy Now</a>
-				</div> 
-				
-			</p>
-		</div>
-
-
-
-
-	</div>
 </div>
 
 
 
+<div id="pics">
+	<img src="images/1.png">
+	<img src="images/2.png">
+	<img src="images/3.png">
+	<img src="images/4.png">
+</div>
+
+<div class="clear"></div>
+
 <div class="About">	
 DOWNLOAD THE EXTENTION
+				<div class="button">
+					<a href="" target="_blank">hdfsdfaf</a>
+				</div> 
+				<div class="button">
+					<a href="" target="_blank">ssadfsda</a>
+				</div>
+	
 
+		<div class="gallery_page hide" id="p_rest">
+			<h1>sdfkjsldkfjsdlkf</h1>
+			
+		</div>
+
+		<div class="gallery_page hide" id="p_life">
+			<h1>sdkfjdslfkjalkdsjf</h1>
+			<p>sdfsdf
+
+				<div class="button">
+					<a href="" target="_blank">Bfkjdhafkl</a>
+				</div> 
+			
+			</p>
+		</div>
 </div>
 
 
@@ -282,10 +149,10 @@ DOWNLOAD THE EXTENTION
 </div>
 	<div class="footer_block">
 		<UL class="footer_ul">
-	
-			<li class="footer_li"><a id="home2" href="javascript:;">Home</a></li>
-			<li class="footer_li"><a id="about2" href="javascript:;">About</a></li>
-			<li class="footer_li"><a id="gallery2" href="javascript:;">Works</a></li>
+			<li class="footer_li"><a class="map_button" href="javascript:;">Map</a></li>
+			<li class="footer_li"><a class="his_button" href="javascript:;">History</a></li>
+			<li class="footer_li"><a class="download_button" href="javascript:;">Download</a></li>
+			<li class="footer_li"><a class="contact_button" href="javascript:;">Contact</a></li>
 		</UL>
 		<div class="footer_copy">
 			Made with care by  <a href="http://donttrustyourcat.com">DONTTRUSTYOURCAT</a> Industries. 

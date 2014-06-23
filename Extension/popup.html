@@ -5,9 +5,12 @@
 		<title>popup</title>
 		<link rel = "stylesheet" href = "includes/cssReset.css">
 		<link rel = "stylesheet" href = "includes/style.css">
+		<link rel = "stylesheet" href = "includes/toastr.css">
 		<link rel = "stylesheet" href = "includes/offstyle.css">
+		<script src="includes/toastr.js"></script>
 		<script src="includes/jquery.js"></script>
         <script src="includes/popup.js"></script>
+		<script src="includes/pullTweets.js"></script>
     </head>
     <body>
 		<header>
@@ -16,17 +19,9 @@
 			</h2>
 		</header>
 		<section id="content">
-			<article>
-				<a href="www.Facebook.com">Facebook</a> continues to be heavily contaminated<br><br>
-			</article>
-			<article>
-				Eye witness reports indicate <a href="www.shenkar.ac.il">Shenkar.com</a> has been infected since Funjoya last week.<br><br>
-			</article>
-			<article>
-				Harvard prof' says he managed to isolate a Toxoplasmic gene located in 
-					  <a href="http://www.youtube.com/watch?v=i_mKY2CQ9Kk" onclick="window.open(this.href, 'mywin',
-					  'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">this</a> video>
-			</article>
+			<div id="twitter_div">
+				<ul id="twitter_update_list"></ul>
+			</div>
 		</section>
 		<div class="messagepop pop">
 			<form method="post" id="new_message" action="/messages">
@@ -39,7 +34,6 @@
 			<h2> Latest cdc warnings: </h2>
 			
 		</div>
-
 		<footer>
 			<ul>
 				<li>
