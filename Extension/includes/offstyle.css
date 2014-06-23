@@ -64,6 +64,7 @@ buttons:active
 
 #twitter
 {
+	position:relative;
 	width:85px;
 	height:78px;
 	background-image:url("../images/left_button.jpg");
@@ -71,13 +72,15 @@ buttons:active
 }
 #warn
 {
+	position:relative;
 	width:85px;
 	height:78px;
 	background-image:url("../images/middle_button.jpg");
 	background-repeat:no-repeat;
 }
 #report
-{
+{	
+	position:relative;
 	width:85px;
 	height:78px;
 	background-image:url("../images/right_button.jpg");
