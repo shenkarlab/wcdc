@@ -3,6 +3,7 @@
     <head>
     	<meta charset = "utf-8">
 		<title>popup</title>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
 		<link rel = "stylesheet" href = "includes/cssReset.css">
 		<link rel = "stylesheet" href = "includes/style.css">
 		<link rel = "stylesheet" href = "includes/toastr.css">
@@ -15,7 +16,7 @@
     <body>
 		<header>
 			<h2>
-				<a href="http://emergency.cdc.gov/">LIVE FEED</a>
+			
 			</h2>
 		</header>
 		<section id="content">
@@ -23,29 +24,24 @@
 				<ul id="twitter_update_list"></ul>
 			</div>
 		</section>
-		<div class="messagepop pop">
-			<form method="post" id="new_message" action="/messages">
-				<p><label for="email">Your email or name</label><input type="text" size="30" name="email" id="email" /></p>
-				<p><label for="body">Message</label><textarea rows="6" name="body" id="body" cols="35"></textarea></p>
-				<p><input type="submit" value="Send Message" name="commit" id="message_submit"/> or <a class="close" href="/">Cancel</a></p>
-			</form>
+		<div class="twitter_pop">
+
 		</div>
-		<div class="cdcpop pop2">
-			<h2> Latest cdc warnings: </h2>
-			
+		<div class="warn_pop">
+
+		</div>
+		<div class="report_pop">
+
 		</div>
 		<footer>
-			<ul>
-				<li>
-					<button id="infected"></button>
+			<section class="buttons">
+				<li id="twitter">
 				</li>
-				<li>
-					<button id="cdc"></button>
+				<li id="warn">
 				</li>
-				<li>
-					<button id="warn"></button>
+				<li id="report">
 				</li>
-			</ul>
+			</section>
 			<div class="clear"></div>
 		</footer>
     </body>

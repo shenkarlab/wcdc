@@ -1,7 +1,8 @@
 {
-  "name": "zombiesVScats",
-  "description": "Toxoplasma gone wild",
+  "name": "WCDC",
+  "description": "Protecting the internet, Saving humans.",
   "version": "1.0",
+  "icons": {"128":"images/icon.png"},
 
   "permissions": [
     "activeTab"

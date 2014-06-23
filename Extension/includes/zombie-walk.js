@@ -30,7 +30,7 @@ function collision()
 function start(location, x_location)
 	{
 		console.log("Zombie-walk started");
-		
+
 		toastr.options = 							// The popup warning! (toastr plugin)
 		{
 		  "closeButton": false,
@@ -47,9 +47,9 @@ function start(location, x_location)
 		  "hideMethod": "fadeOut"
 		}
 		toastr.error("CDC advises that you leave this site immediately due to contamination. ", "WARNING")
-		
-		
-		
+
+
+
 		// create an new instance of a pixi stage
 		// the second parameter is interactivity...
 		var interactive = true;
@@ -136,13 +136,13 @@ function start(location, x_location)
 		setTimeout( function animate()
 		{
 			var animationAgeInMs = new Date().getTime();
-	
+
 			//bunny.position.x -= 0.2;   // dont move
 			//bunny.rotation -= 0.1;
 			//console.log(bunny.position.x +" "+ bunny.position.y); //position of bunny
 
 			//if (Math.round(bunny.position.x) == Math.round(x_location) && detected == 0) old colision
-			
+
 			if(Math.floor(animationAgeInMs / msPerFrame) % walkCycleFrameCount == 15 && detected == 0)
 			{	// collision detection
 				console.log("yes");
@@ -155,11 +155,11 @@ function start(location, x_location)
 				bunny.gotoAndStop((Math.floor(animationAgeInMs / msPerFrame) % walkCycleFrameCount));
 			else
 				bunny.gotoAndStop((Math.floor(animationAgeInMs / msPerFrame) % 2)+14);
-		
+
 			// render the stage   
 			renderer.render(stage);
 			requestAnimFrame(animate);
-	
+
 		} , 4000 );
 	}
 
@@ -167,7 +167,7 @@ function start(location, x_location)
 $(document).ready(function find() 
 			{
 				highlightWordPositions('cat');
-				
+
 				function highlightWordPositions(word, color) 
 				{
     				var $paras = $('p'),$spans,_top = 0,_left = 0;
@@ -178,7 +178,7 @@ $(document).ready(function find()
 
         				$p.html($p.text().replace(regex, '<span>' + word + '</span>'));
         				$spans = $p.find('span');
-						
+
         				$spans.each(function () 
         				{
             				var $span = $(this),$offset = $span.offset(),$overlay = $('<div class="overlay"/>');
@@ -195,7 +195,7 @@ $(document).ready(function find()
 				var obj = element[0].getBoundingClientRect() //get html object location for collision 
 				console.log(obj.top); //position of objects top
 				console.log(obj.left); //position of objects top
-				
+
 				if (obj.top > 0)
 					start(obj.top, obj.left);
 });

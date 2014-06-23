@@ -10,7 +10,8 @@ $(document).ready(function() // pull from php function
 		{
 			while(index < data.length)
 			{	// this while is running all over the json file
-				$("#twitter_update_list").append("<p>" + data[index].created_at + "<br>" + data[index].text + "<br><br>" + "</p>");
+				$("#twitter_update_list").append
+				("<p>" + data[index].created_at + "<br>" + data[index].text + "<br><br>" + "</p>");
 
 				console.log(data[index].text);
 				index++;

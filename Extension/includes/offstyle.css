@@ -1,34 +1,28 @@
 /* from here starts the popup style */
 
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 
 body
 {
-  font-family: "Alef Hebrew",
-               “Helvetica Neue”,
-               Helvetica,
-               Arial,
-               sans-serif;
+	background:black;
 }
 
 header
 {
-	background-color:#dedede;
-	width:263px;
+	background-color:#1d1d1d;
+	width:265px;
 	height:36px;
 	background-image:url("../images/live.png");
 	background-repeat:no-repeat;
 	background-position:right 5px center;
 }
 
-header h2 a
+header h2
 {
-	position:relative;
-	left:5px;
-	top:5px;
-	color: #fff;
-	text-decoration:none;
-	font-size:150%;
+	width:180px;
+	height:36px;
+	background-image:url("../images/live_feed.jpg");
+	background-repeat:no-repeat;
+	background-position:right 5px center;
 	/* 
 	margin: 3px 0 3px 10px;
 	padding: 3px 0;
@@ -38,144 +32,67 @@ header h2 a
 
 #content
 {
-	background-color:#FFFFFF;
-	width:264px;
-	height:267px;
+	background-image:url("../images/BG_map.jpg");
+	background-repeat:no-repeat;
+	background-color:black;
+	width:265px;
+	height:225px;
 	margin: 0, auto;
 	word-wrap: break-word;
 }
 
-#content:first-child
+.buttons
 {
-	source:url("../images/icon_target.png");
-	background-repeat:no-repeat;
-	display:block;
-	position:absolute;
-	background-size: 100% 100%;
-	width:50px;
-    height:50px;
     float:left;
+    list-style-type:none;
+    margin: 0;
+	padding: 0;
 }
-#content:nth-child(2)
+.buttons li
 {
-	background:url("../images/icon_eye.png");
-	background-repeat:no-repeat;
-}
-#content:last-child
-{
-	background:url("../images/icon_tube.png");
-	background-repeat:no-repeat;
-	background-position:left 20px center;
+	text-align: center;
+	display:inline-block;
 }
 
-button
+.buttons li:hover 
 {
-	width:88px;
-	height:77px;
-    background: #3c7296;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    float:left;
+	opacity:0.7;
 }
-button:hover 
+buttons:active 
 {
-    background: #6b94af;
-    text-decoration: none;
-}
-button:active 
-{
-    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-    background: #6b94af;
-    border: solid 1px #203E5F;
 }
 
-/* 
-
-li
+#twitter
 {
-	background-color:green;
-	width:300px;
-	height:50px;
-	margin: 3px 0 3px 10px;
-}
- */
-
-#infected
-{
-	background-image:url("../images/infected.png");
+	width:85px;
+	height:78px;
+	background-image:url("../images/left_button.jpg");
 	background-repeat:no-repeat;
-	background-position:bottom 5px center;
-}
-#cdc
-{
-	background-image:url("../images/warning.png");
-	background-repeat:no-repeat;
-	background-position:top 2px center;
 }
 #warn
 {
-	background-image:url("../images/fb.png");
+	width:85px;
+	height:78px;
+	background-image:url("../images/middle_button.jpg");
 	background-repeat:no-repeat;
-	background-position:bottom 5px center;
+}
+#report
+{
+	width:85px;
+	height:78px;
+	background-image:url("../images/right_button.jpg");
+	background-repeat:no-repeat;
 }
 
-a.selected {
-  background-color:#1F75CC;
-  color:white;
-  z-index:100;
+#twitter_update_list
+{	
+	padding-left:20px;
+	padding-top:20px;
+	color:white;
+	font-family: 'Ubuntu Mono';
+	line-height:18px;
 }
 
-.messagepop {
-  background-color:#FFFFFF;
-  border:1px solid #999999;
-  cursor:default;
-  display:none;
-  margin-top: 15px;
-  position:relative;
-  text-align:left;
-  width:394px;
-  z-index:50;
-  padding: 25px 25px 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 3px;
-  padding-left: 15px;
-  text-indent: -15px;
-}
-
-.messagepop p, .messagepop.div {
-  border-bottom: 1px solid #EFEFEF;
-  margin: 8px 0;
-  padding-bottom: 8px;
-}
-
-.cdcpop {
-  border:1px solid #999999;
-  cursor:default;
-  display:none;
-  margin-top: 15px;
-  position:relative;
-  text-align:left;
-  width:394px;
-  z-index:50;
-}
 
 .clear
 {

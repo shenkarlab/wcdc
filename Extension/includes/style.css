@@ -1,25 +1,6 @@
-/* 
-.overlay 	// dynamic Highlight-word finding
-{
-    position: absolute;
-    border: 1px solid red;
-    background: #dff;
-    margin: -1px;
-    z-index: -1;
-}
 
-p 
-{
-    width: 250px;
-    margin: 24px 65px;
-}
-p.span 
-{
-    font-weight: bold;
-}
 
-.trans 
-{ 
-	opacity: 0; filter: alpha(opacity: 0);
+#twitter_update_list
+{
+	font: 13px "Helvetiva Neue", Helvetica, Arial, sans-serif;
 }
- */
