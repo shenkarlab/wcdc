@@ -1,0 +1,502 @@
+/*
+CSS file created with:Instantblueprint - Create a web project framework in seconds.
+http://instantblueprint.com
+Project: Douglas
+File: css/style.css
+Last edited: December 4, 2013, 8:28 am
+*/
+
+
+/*  Main  */
+body {
+    font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+	line-height: 32px;
+    color: #fff;
+    background: black;
+    background-attachment:fixed;
+    -webkit-font-smoothing:antialiased;
+}
+
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding:20px 40px 20px 40px;	
+	text-transform: uppercase;
+	width: 50%;
+	margin:0 auto; 
+}
+
+h2{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: 100;
+	font-size: 18px;
+	width:50%;
+	margin:0 auto; 
+}
+
+h4{
+	font-family: 'Press Start 2P', cursive;
+	font-weight: 100;
+	font-size: 16px;
+	margin:0 auto; 
+}
+
+a:active {
+	opacity: 1;
+}
+
+a:hover {
+	opacity: 0.5;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#wrapper {
+	margin:0 auto; 
+
+}
+
+header{
+	width:100%;
+	position: fixed;
+	background: #d25e34;
+	min-width:960px;
+	z-index: 98;
+	height: 40px;
+}
+
+.news{
+	width:100%;
+	position: relative;
+	top:200px;
+	height: 50px;
+	background:rgba(255, 255, 255, 0.1);
+	min-width:960px;
+	z-index: 3;
+}
+
+.logo{
+	position: fixed;
+    margin-left:35%;
+	z-index: 99;
+}
+
+.header_ul{
+	margin-left:5%;
+	margin-top:1%;
+	list-style-type:none;
+	z-index: 3;
+}
+
+.header_li{
+	display: inline-block;
+	margin-right:20px;
+	transition-duration: 0.3s;
+ 	transition-property: transform;
+}
+
+.header_li:hover{
+	-webkit-transform:rotateZ(-40deg);
+	-moz-transform:rotateZ(-40deg);
+	-o-transform:rotateZ(-40deg);
+	-ms-transform:rotateZ(-40deg);
+	transform:rotateZ(-40deg);
+}
+
+#about1:hover{
+	transition-duration: 0.3s;
+	transition-property: transform;
+
+	-webkit-transform:rotateZ(-20deg);
+	-moz-transform:rotateZ(-20deg);
+	-o-transform:rotateZ(-20deg);
+	-ms-transform:rotateZ(-20deg);
+	transform:rotateZ(-20deg);
+}
+
+.header_li>a:hover{
+	opacity: 1;	
+}
+
+.header_li>a:active{
+	opacity: 0.6;
+	-webkit-transform:rotateZ(-35deg);
+  	-moz-transform:rotateZ(-35deg);
+  	-o-transform:rotateZ(-35deg);
+  	-ms-transform:rotateZ(-35deg);
+  	transform:rotateZ(-35deg);
+}
+
+@-keyframes floating{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@-moz-keyframes floating{
+    0%{
+        -moz-transform: translate(0px);
+    }
+    50%{
+        -moz-transform: translateY(20px);
+    }
+    100%{
+        -moz-transform: translate(0px);
+    }
+}
+
+@-webkit-keyframes floating{
+    0%{
+        -webkit-transform: translate(0px);
+    }
+    50%{
+        -webkit-transform: translateY(20px);
+    }
+    100%{
+        -webkit-transform: translate(0px);
+    }
+}
+
+
+@-keyframes floating1{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@-moz-keyframes floating1{
+    0%{
+        -moz-transform: translate(0px);
+    }
+    50%{
+        -moz-transform: translateX(10px);
+    }
+    100%{
+        -moz-transform: translate(0px);
+    }
+}
+
+@-webkit-keyframes floating1{
+    0%{
+        -webkit-transform: translate(0px);
+    }
+    50%{
+        -webkit-transform: translateX(10px);
+    }
+    100%{
+        -webkit-transform: translate(0px);
+    }
+}
+
+.landing{
+	position: relative;
+	height:90%;
+	width:50%;
+	min-width: 900px;
+	margin:0 auto; 
+	padding-top: 200px;
+}
+
+.landing_pic{
+	position: absolute;
+	top:60px;
+	z-index: 1;
+	margin:0 auto; 
+	padding-bottom: 20px;
+	animation: floating 3s linear infinite;
+	-webkit-animation: floating 3s linear infinite;
+	-moz-animation: floating 3s linear infinite;
+	animation-direction: alternate;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+
+}
+
+.landing_pic1{
+	position: absolute;
+	top:60px;
+	z-index: 1;
+	margin:0 auto; 
+	padding-bottom: 20px;
+	animation: floating 7s linear infinite;
+	-webkit-animation: floating 7s linear infinite;
+	-moz-animation: floating 7s linear infinite;
+	animation-direction: alternate;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+
+}
+
+.landing_pic, .landing_pic1:hover{
+	cursor:hand;
+  	cursor:grab;
+  	cursor:-moz-grab;
+  	cursor:-webkit-grab;
+}
+
+
+
+
+.arrow2{
+	position: absolute;
+	top:-90px;
+	left: 60px;
+	margin: 0 auto;
+}
+
+.arrow2:hover{
+	position: absolute;
+	top:-85px;
+	transition: 0.4s;
+}
+
+.arrow2:hover{
+	position: absolute;
+	top:-85px;
+	transition: 0.4s;
+}
+
+.About{
+ 	background: #202020 ;
+	text-align: center;
+	padding-bottom: 50px;
+	height:400px;
+	position: relative;
+	-moz-box-shadow:    3px 3px 5px 6px black;
+  	-webkit-box-shadow: 3px 3px 5px 6px black;
+  	box-shadow:         3px 3px 5px 6px black;
+}
+
+.about_photo{
+	width: 100%;
+	position: relative;
+	min-width:960px;
+	z-index: 1;
+}
+
+p{	
+	width: 55%;
+ 	margin:0 auto; 
+ 	min-width: 600px;
+ 	padding: 20px 20px;
+}
+
+.gallery{
+	height: auto;
+	padding:30px 40px 10px 40px;
+	text-align: center;
+	position: relative;
+
+}
+
+
+.gallery_ul{
+	list-style-type:none;
+	min-width:850px;
+
+}
+
+.gallery_li{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	display: inline-block;
+	margin-right:20px;
+	margin-bottom: 20px;
+		z-index: 3;
+
+}
+
+.gallery_li>a:active, .gallery_li.current a{
+	color:rgba(228, 162, 45, 1);
+}
+
+.gallery_page{
+	width:50%;
+	padding-left:4%;
+	height:auto;
+	min-height:400px;
+	background: black;
+		/*background-image: url('../images/stars_bottom.png');*/
+
+	background-image:url('../images/bg.png');
+    background-attachment:fixed;	
+    background-repeat:repeat;
+    padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: left;
+	display: inline-block;
+	-moz-box-shadow:    3px 3px 5px 6px black;
+  	-webkit-box-shadow: 3px 3px 5px 6px black;
+  	box-shadow:         3px 3px 5px 6px black;
+}
+
+#map_button
+{
+	position:absolute;
+	z-index:100;
+	display:block;
+	content:url("../images/download1.png");
+	background-repeat: no-repeat;
+	width: auto; /*or your image's width*/
+	height: auto; /*or your image's height*/
+	left:80%;
+	top:40%;
+}
+
+#pics
+{
+	float:right;
+	width:45%;
+}
+
+.clear
+{
+	clear:both;
+}
+
+.button{
+	border: 2px white solid;
+	width: auto;
+	margin: 0 auto;
+	display:inline-block;
+	padding: 8px;
+	margin: 10px;
+}
+
+.button>a {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 8px;
+};
+
+
+}
+.last{
+	position: absolute;
+	left:0px;
+	top:150px;
+}
+
+.hide{
+	display: none;
+}
+
+.arrow {
+	position: absolute;
+	bottom:-30px;
+	z-index: 90;
+}
+
+.footer{
+	position: relative;
+	height: 500px; /*  Height of the screen */
+	text-align: center;
+	/*background-image: url('../images/stars_bottom.png');*/
+	background-size: 75%;
+}
+
+.banner{
+	position: absolute;
+	left: 0px;
+	width: 40%;
+}
+
+.rocket{
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 14%;
+	animation: floating 4s linear infinite;
+	-webkit-animation: floating 4s linear infinite;
+	-moz-animation: floating 4s linear infinite;
+	animation-direction: alternate;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+	z-index: 3;
+}
+
+.draggable { 
+  	padding: 0.5em; 
+ }
+
+
+.footer_img{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	z-index: 2;
+}
+
+.counter{
+	position: relative;
+	top: 45%;
+}
+
+.kkcount-down{
+	font-size: 100px;
+	font-weight: 100;
+}
+
+.fb{
+	position: relative;
+	top:10px;
+}
+
+.footer_ul{
+	position: absolute;
+	bottom: 15px;
+	left:30px;
+	list-style-type:none;
+}
+
+.footer_li{
+	display: inline-block;
+	margin-right:20px;
+}
+
+.footer_block{
+	background: #202020;
+	height: 60px;
+	position: relative;
+	min-width:960px;
+}
+
+.footer_copy{
+	position:absolute;
+	right:30px;
+	bottom: 15px;
+	color:black;
+	opacity: 0.4;
+}
+
+   /* Set a size for our map container, the Google Map will take up 100% of this container */
+#map {
+	width:100%;
+	height: 100px;
+	top:150px;
+}
+
+
