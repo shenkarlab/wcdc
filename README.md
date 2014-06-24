@@ -1,4 +1,4 @@
-zombies-vs-cats
+WCDC - Web Center for Disease Control
 ===============
 
-Zombies vs. Cats is an extansion-based game that will make your friends and cats angry! 
+Protecting the Internet, Saving Humans!
