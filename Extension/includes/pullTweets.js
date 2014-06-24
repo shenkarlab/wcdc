@@ -12,8 +12,8 @@ $(document).ready(function() // pull from php function
 			{	// this while is running all over the json file
 				$("#twitter_update_list").append
 				("<p>" + data[index].created_at + "<br>" + data[index].text + "<br><br>" + "</p>");
-				if($(document).height() > 343)	// remove messages that exceed our space
-					$('#twitter_update_list:last-child').children().last().remove();
+				// if($(document).height() > 343)	// remove messages that exceed our space
+// 					$('#twitter_update_list:last-child').children().last().remove();
 					
 				console.log($( document ).height());
 				console.log(data[index].text);

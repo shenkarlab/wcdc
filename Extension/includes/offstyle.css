@@ -39,6 +39,7 @@ header h2
 	height:225px;
 	margin: 0, auto;
 	word-wrap: break-word;
+	overflow: hidden;
 }
 
 .buttons
@@ -89,11 +90,15 @@ buttons:active
 
 #twitter_update_list
 {	
+	position: absolute;
 	padding-left:20px;
 	padding-top:20px;
 	color:white;
 	font-family: 'Ubuntu Mono';
 	line-height:18px;
+	width: 90%;
+    overflow: auto;
+    height: 60%;
 }
 
 
