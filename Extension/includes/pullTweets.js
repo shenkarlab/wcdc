@@ -4,7 +4,7 @@ $(document).ready(function() // pull from php function
 	var sIndex = 0;					// second index of loop
 	var text = []					// message
 	var createdAt = [];				// message time
-	$.getJSON("http://shenkar.html5-book.co.il/2013-2014/html5/dev_17/tweets_json.php",function(data)
+	$.getJSON("http://www.donttrustyourcat.com/php/tweets_json.php",function(data)
 	{
 		$.each(data,function(key,val)
 		{
